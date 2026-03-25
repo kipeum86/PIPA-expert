@@ -407,12 +407,15 @@ Then use `/agents/pipa-agent` to activate the PIPA expert persona.
 
 PIPA Expert is one of several specialized legal AI agents operating under the fictional **법무법인 진주 (Law Firm Pearl)**:
 
-| Agent | Attorney | Year | Specialty |
-|-------|----------|------|-----------|
-| [game-legal-research](https://github.com/kipeum86/game-legal-research) | 심진주 (Sim Jinju) | 3rd | Game industry law |
-| [legal-translation-agent](https://github.com/kipeum86/legal-translation-agent) | 변혁기 (Byeon Hyeok-gi) | 4th | Legal translation |
-| **PIPA-expert** | **정보호 (Jeong Bo-ho)** | **5th** | **Data privacy law** |
-| [second-review-agent](https://github.com/kipeum86/second-review-agent) | 반성문 (Ban Seong-mun) | 10th | Quality review (Partner) |
+| Agent | Attorney | Specialty |
+|-------|----------|-----------|
+| [game-legal-research](https://github.com/kipeum86/game-legal-research) | 심진주 (Sim Jinju) | Game industry law |
+| [legal-translation-agent](https://github.com/kipeum86/legal-translation-agent) | 변혁기 (Byeon Hyeok-gi) | Legal translation |
+| [general-legal-research](https://github.com/kipeum86/general-legal-research) | 김재식 (Kim Jaesik) | Legal research |
+| **PIPA-expert** | **정보호 (Jeong Bo-ho)** | **Data privacy law** |
+| [contract-review-agent](https://github.com/kipeum86/contract-review-agent) | 고덕수 (Ko Duksoo) | Contract review |
+| [legal-writing-agent](https://github.com/kipeum86/legal-writing-agent) | 한석봉 (Han Seokbong) | Legal writing |
+| [second-review-agent](https://github.com/kipeum86/second-review-agent) | 반성문 (Ban Seong-mun) | Quality review (Partner) |
 
 ---
 
