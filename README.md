@@ -3,6 +3,7 @@
 **[English](#pipa-expert-agent)** · **[한국어](README.ko.md)**
 
 > Release notes are published on **[GitHub Releases](https://github.com/kipeum86/PIPA-expert/releases)**.
+> See [Publishing Policy](docs/publishing-policy.md).
 
 # PIPA Expert Agent
 
