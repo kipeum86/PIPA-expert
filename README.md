@@ -2,6 +2,8 @@
 
 **[English](#pipa-expert-agent)** · **[한국어](README.ko.md)**
 
+> Release notes are published on **[GitHub Releases](https://github.com/kipeum86/PIPA-expert/releases)**.
+
 # PIPA Expert Agent
 
 ### KP Legal Orchestrator's Korean Data Privacy Specialist
@@ -329,6 +331,17 @@ Before any output is finalized, a **dedicated fact-checker sub-agent** verifies 
 
 ---
 
+## Post-Hoc Citation Audit
+
+For legal opinions and analysis memos, the agent can run a second citation-audit pass after the fact-checker:
+
+- `/audit <file.md>` audits an existing Markdown file and returns annotated Markdown.
+- Opinion and memo workflows run citation audit conditionally after drafting.
+- Markdown outputs receive a `Citation Audit Log` appendix.
+- DOCX outputs receive the same audit log through `scripts/docx_citation_appendix.py`.
+
+---
+
 ## DOCX Legal Analysis Memo Generator
 
 The agent produces **professional-format Word documents** with:
@@ -338,6 +351,7 @@ The agent produces **professional-format Word documents** with:
 - Risk matrix tables with color coding
 - Full citation trail with verification status
 - Fact-check report appended
+- Citation audit appendix for memo/opinion deliverables
 - Signature block and disclaimer
 - AI disclosure notice
 
@@ -396,13 +410,20 @@ PIPA-expert/
 ├── scripts/
 │   ├── fetch-pipa-from-api.py    # Open Law API collector
 │   ├── preprocess_guidelines.py  # PDF → Markdown pipeline
-│   └── build-guideline-index.py  # Index generator
+│   ├── build-guideline-index.py  # Index generator
+│   └── docx_citation_appendix.py # DOCX citation-audit adapter
+├── citation_auditor/             # Markdown-native citation audit package
 ├── .claude/
+│   ├── commands/audit.md         # /audit markdown command
 │   ├── agents/pipa-agent.md      # Agent definition
 │   └── skills/
+│       ├── citation-auditor/     # Post-hoc citation audit skill
+│       ├── verifiers/            # Jurisdiction/source verifier skills
 │       ├── legal-opinion-formatter/  # DOCX generation skill
 │       └── ingest/               # Source ingestion skill
 ├── ${PIPA_OUTPUT_DIR:-output/opinions/}  # Generated DOCX opinions
+├── requirements.txt              # Runtime Python dependencies
+├── legal-writing-formatting-guide.md  # Legal opinion/memo drafting style guide
 └── docs/                         # Design specs
 ```
 
@@ -416,14 +437,14 @@ PIPA-expert/
 
 - [Claude Code](https://claude.ai/claude-code) CLI
 - Python 3.10+
-- `python-docx` (`pip install python-docx`)
+- Python dependencies (`pip install -r requirements.txt`)
 
 ### Setup
 
 ```bash
 git clone <repository-url>
 cd PIPA-expert
-pip install python-docx
+pip install -r requirements.txt
 ```
 
 Use the current repository URL from your Git hosting page.
