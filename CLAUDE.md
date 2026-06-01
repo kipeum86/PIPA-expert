@@ -38,7 +38,6 @@ legal-writing-formatting-guide.md  # 상세 스타일/서식 엣지 케이스용
 - PIPC 가이드라인: 46건 (`index/guideline-index.json`)
 - 기본 활성 법령 세트는 개인정보 직접 관련 법령만 유지하도록 슬림화했고 모두 `count == target`, same-law internal unresolved reference `0` 상태임. `index/cross-reference-graph.json`에는 cross-law edge 1,309건(869 resolved)이 들어 있고, `index/external-law-candidates.json`은 corpus 밖 외부 법령 154건을 온디맨드 확장 후보로 정리한다(고우선 8건). 폐지된 `개인정보보호법 시행규칙`은 `index/source-registry.json`에서 `retired`로 관리.
 - MCP 연동: korean-law-mcp + kordoc 서버로 법제처 API 실시간 조회 및 HWP 네이티브 파싱 가능. 로컬 KB 미수집 법령(154건) 및 판례/처분례를 온디맨드 조회.
-- 상세 감사/수정 로그: `docs/2026-03-27-quality-audit-log.md`
 
 ## Shared Agent Protocol
 
@@ -122,4 +121,4 @@ vendored auditor.
 - `docs/publishing-policy.md` — GitHub Releases 기반 릴리즈 노트 정책
 - `${PIPA_PRIVATE_DIR:-_private/}/DESIGN.md` — RAG 시스템 전체 설계
 - `${PIPA_PRIVATE_DIR:-_private/}/PROGRESS.md` — 작업 기록 및 진행 상황
-- `${PIPA_PRIVATE_DIR:-_private/}/specs/2026-03-24-pipa-agent-system-design.md` — Agent 시스템 스펙
+- `${PIPA_PRIVATE_DIR:-_private/}/specs/` — Agent 시스템 스펙

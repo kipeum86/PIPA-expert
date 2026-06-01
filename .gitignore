@@ -8,6 +8,9 @@ PIPC Official Guidelines/
 docs/releases/
 docs/RELEASE-*.md
 
+# Dated local notes should live in /_private, not public docs.
+docs/20??-??-??-*.md
+
 # Python
 __pycache__/
 *.pyc
@@ -22,7 +25,7 @@ output/**
 !output/opinions/
 !output/opinions/.gitkeep
 
-# 내부 설계 문서 (opaque private workspace)
+# 로컬 작업 공간
 /_private/**
 !/_private/.gitkeep
 
