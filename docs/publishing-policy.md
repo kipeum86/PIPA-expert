@@ -2,7 +2,7 @@
 
 PIPA-expert release notes are published on GitHub Releases:
 
-https://github.com/kipeum86/PIPA-expert/releases
+https://github.com/lowtidebuild/PIPA-expert/releases
 
 Repository-local release note files are not committed. This includes:
 
@@ -30,7 +30,7 @@ repository.
 
 PIPA-expert의 릴리즈 노트는 GitHub Releases에 게시합니다:
 
-https://github.com/kipeum86/PIPA-expert/releases
+https://github.com/lowtidebuild/PIPA-expert/releases
 
 저장소 내부 릴리즈 노트 파일은 커밋하지 않습니다. 아래 경로가 이에 해당합니다:
 

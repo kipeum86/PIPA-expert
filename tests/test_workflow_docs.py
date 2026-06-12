@@ -68,8 +68,8 @@ def test_release_notes_policy_uses_github_releases_only() -> None:
     assert "docs/RELEASE-*.md" in gitignore
     assert "GitHub Releases" in policy
     assert "docs/releases/**" in policy
-    assert "https://github.com/kipeum86/PIPA-expert/releases" in readme
-    assert "https://github.com/kipeum86/PIPA-expert/releases" in readme_ko
+    assert "https://github.com/lowtidebuild/PIPA-expert/releases" in readme
+    assert "https://github.com/lowtidebuild/PIPA-expert/releases" in readme_ko
     assert "docs/releases/v1.0.0.md" not in readme
     assert "docs/releases/v1.0.0.md" not in readme_ko
 
